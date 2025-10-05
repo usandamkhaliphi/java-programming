@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+public class java_age 
+{
+    
+    public static void main(String[] args) 
+    
+    {
+        String name = JOptionPane.showInputDialog("Enter your name: ");
+        String age = JOptionPane.showInputDialog("Enter your age: ");
+        int age_int = Integer.parseInt(age);
+        JOptionPane.showMessageDialog(null, "Hello " + name + ", you are " + age_int + " years old.");
+    }
+  
+}
