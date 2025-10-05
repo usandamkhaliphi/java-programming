@@ -1,1 +1,13 @@
+import javax.swing.JOptionPane;
 
+public class Activity3_1
+{
+
+   public static void main(String[] args)
+   {
+   
+   JOptionPane.showMessageDialog(null,((1/2) * (4+7) / 6 - 4));
+   System.exit(0);
+   
+   }
+}
