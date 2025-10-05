@@ -1,0 +1,35 @@
+import javax.swing.JOptionPane;
+
+public class Area_5_1
+{
+public static void main(String[] args)
+   {
+      int n1;
+      int n2;
+      String outputShape;
+      int outputArea;
+      
+      n1 = Integer.parseInt(JOptionPane.showInputDialog("Enter the length"));
+      n2 = Integer.parseInt(JOptionPane.showInputDialog("Enter the width"));
+      
+      calcArea(n1,n2);
+    }
+public static void calcArea(int num1, int num2)
+{
+   int area;
+   if (num1 == num2)
+       {
+             
+             System.out.println("the shape is a square and the area is " + (num1 * num1));
+       }
+           
+         else
+            {
+               
+               System.out.println("the shape is a rectangle and the area is " + (num1 * num2));
+            }
+   
+}  
+   
+
+}       
