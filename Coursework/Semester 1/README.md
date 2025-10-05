@@ -1,4 +1,5 @@
 The coursework covers the fundamental building blocks of programming, structured across seven units. The files within this folder correspond to the concepts below:
+
 Unit 1: Introduction to Algorithms and Programming
 
 Understanding the nature of computer programs.
