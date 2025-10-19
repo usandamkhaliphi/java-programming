@@ -1,18 +1,43 @@
-import java.util.*;
-import java.util.LinkedList;
 public class Customer
+{
+   public String name;
+   public double totalSpent;
+   
+   public Customer(String n, double t)
+   {
+      this.name = n;
+      this.totalSpent = t;
+   }
+   
+   public double getDiscount()
+   {
+      double newTotal;
+
+      if (totalSpent > 1000) 
+      {
+         newTotal = totalSpent - (totalSpent * 10 / 100);
+      }     
+     
+      else 
+      
+      {
+         newTotal = totalSpent;
+      }
+
+      return newTotal;
+   
+   }
+}
+class Main
 {
 public static void main(String[] args)
    {
-      Queue q1 = new LinkedList();
+      Customer c1 = new Customer("John",921.82);
+      Customer c2 = new Customer("Peter",3291.93);
+      Customer c3 = new Customer("Samuel",2732.64);
       
-      q1.add("Peter");
-      q1.add("Sam");
-      q1.add("John");
-      q1.add("Caleb");
-      q1.remove();
-      q1.remove();
-      
-      System.out.println("Queue: " + q1);
+      System.out.println("Total: R" + c1.getDiscount());
+      System.out.println("Total: R" + c2.getDiscount());
+      System.out.println("Total: R" + c3.getDiscount());
    }
-}
+}   
